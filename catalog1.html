@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<title>Catalog</title>
+</head>
+<body>
+	<div class="cont bg-neutral-700">
+		<nav class="navbar w-full flex items-center text-white justify-between">
+			<div class="flex gap-4 p-5 ml-32 max-lg:ml-10 max-md:gap-3 max-sm:ml-0 max-[430px]:ml-0 items-center ">
+				<img src="./icon/navIcon1.svg" alt="" class="menuBtn cursor-pointer" />
+				<a href="map.html"><img src="./icon/navIcon2.svg" alt="" /></a>
+				<a href="#" class="number ml-4 max-md:text-[14px] max-sm:text-sm max-sm:hidden">+8 981 120-11-17</a>
+			</div>
+			<div class="logo mx-auto max-sm:hidden">
+				<img src="./icon/navIcon3.svg" alt="" />
+			</div>
+			<div class="right flex gap-5 ml-20 items-center mr-32 max-lg:mr-10 max-sm:mr-4 max-[430px]:mr-0 max-[430px]:ml-0">
+					<img src="./icon/navIcon5.svg" alt="" class="loginBtn cursor-pointer" />
+				<a href="servic.html">
+					<img src="./icon/navIcon6.svg" alt="" />
+				</a>
+				<div class="logo mx-auto hidden max-sm:block max-sm:mr-1">
+					<img src="./icon/navIcon3.svg" alt="" />
+				</div>
+			</div>
+		</nav>
+		<div class="menu fixed p-5 px-10 text-white">
+			<button class="exit"><img src="./icon/exit.svg" alt=""></button>
+			<ul class="mt-16 text-xl uppercase">
+				<li class="mt-5">Кухонные ножи TUOTOWN</li>
+				<li class="mt-5">Складные ножи TUOTOWN</li>
+				<li class="mt-5">Кухонные ножи QXF</li>
+				<li class="mt-5">Точильные камни</li>
+				<li class="mt-5">Наборы для BBQ</li>
+				<li class="mt-5">Кухонные принадлежности</l>
+				<li class="mt-5">Туристические товары</li>
+			</ul>
+			<ul class="mt-16 text-lg uppercase text-gray-500">
+				<li class="mt-3">Новости</li>
+				<li class="mt-3">О компании</li>
+				<li class="mt-3">Контакты</li>
+				<li class="mt-3">Как проехать</li>
+			</ul>
+		</div>
+		<div class="login_page w-full h-full">
+			<div class="login-box p-10 text-white text-center max-lg:p-5 max-lg:w-[370px] max-md:w-[350px]">
+				<img src="./icon/exit.svg" alt="" class="Login_exitBtn cursor-pointer w-4 h-4">
+        <h2 class="text-4xl max-md:text-3xl">Welcome back</h2>
+        <p class="mt-1 text-xl max-md:text-lg">Enter your details</p>
+        <form class="text-left mt-8">
+            <div class="form-group">
+                <label for="email">
+                    Email
+                </label>
+								<i class="fa-solid fa-user"></i>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Your email"
+                    required
+                >
+            </div>
+            <div class="form-group">
+                <label for="password">
+                    Password
+                </label>
+								<i class="fa-solid fa-key"></i>
+                <input type="password" id="password" placeholder="Your password" required>
+            </div>
+            <a class="forgot">
+                Forgot your password?
+            </a>
+            <input type="submit" value="Log In">
+        </form>
+    </div>
+		</div>
+		<div class="slider w-full relative">
+			<div class="main_slider w-full">
+				<img src="./image/img.png" alt="" class="img1 w-full max-lg:hidden">
+				<img src="./image/img1.png" alt="" class="w-full hidden max-lg:block" >
+			</div>
+			<div class="text2 absolute left-0 p-3 text-white text-center w-full h-full max-lg:top-60 max-md:top-28 max-[430px]:top-28">
+				<h1 class="title text-4xl max-lg:text-4xl max-md:text-3xl max-sm:text-2xl max-[430px]:text-lg wow animate__animated animate__fadeInDown ">Дом и Ножи</h1>
+				<p class="mt-8 text-xl max-lg:text-xl max-md:text-lg max-md:mt-6 max-sm:mt-4 max-[430px]:text-[12px] max-[430px]:mt-1 max-[430px]:leading-4 wow animate__animated animate__fadeInDown">Эксклюзивные технологии на страже чистоты и уюта в вашем доме</p>
+			</div>
+			<div class="slider_indicators w-full absolute text-white flex items-center justify-between px-28 max-lg:px-16 max-sm:px-10 max-sm:bottom-5 max-[430px]:px-5 max-[430px]:bottom-2  wow animate__animated animate__fadeInUp">
+				<a href="index.html"><button class="prev1 p-4 max-sm:p-3 max-sm:text-sm text-white max-[430px]:p-2 max-[430px]:text-[11px]"><i class="fa-solid fa-arrow-left "></i></button></a>
+				<div class="spans justify-center flex gap-8">
+					<a href="index.html"><span class=" max-[430px]:text[11px]">1</span></a>
+					<span class="span1 max-[430px]:text[11px]">2</span>
+					<a href="catalog2.html"><span class=" max-[430px]:text[11px]">3</span></a>
+					<a href="product.html"><span class=" max-[430px]:text[11px]">4</span></a>
+				</div>
+				<a href="catalog2.html"><button class="next1 p-4 max-sm:p-3 max-sm:text-sm text-white max-[430px]:p-2 max-[430px]:text-[11px]"><i class="fa-solid fa-arrow-right "></i></button></a>
+			</div>
+		</div>
+		<div class="catolog w-full px-20 py-5 mt-5 max-lg:px-2 flex flex-col items-center">
+			<div class="catolog_boxs w-full flex justify-between gap-5 max-sm:flex-wrap max-sm:justify-center">
+				<div class="catolog_box relative bg-[url('/image/catolog_box1.png')] text-white flex items-end p-5 max-md:p-3  wow animate__animated animate__fadeInLeft">
+					<h1 class="cover_title text-xl max-lg:text-[16px] max-md:text-sm ">Познакомьтесь с коллекцией ножей TUOTOWN</h1>
+					<div class="cover2 left-0"></div>
+				</div>
+				<div class="catolog_box relative bg-[url('/image/catolog_box2.png')] text-white flex items-end p-5 max-md:p-3  wow animate__animated animate__fadeInRight">
+					<h1 class="cover_title text-xl max-lg:text-[16px] max-md:text-sm ">Познакомьтесь с коллекцией ножей TUOTOWN</h1>
+					<div class="cover2 left-0"></div>
+				</div>
+			</div>
+			<div class="catolog_boxs w-full flex justify-between mt-5 gap-5 max-sm:flex-wrap max-sm:justify-center">
+				<div class="catolog_box relative bg-[url('/image/catolog_box3.png')] text-white flex items-end p-5 max-md:p-3  wow animate__animated animate__fadeInLeft">
+					<h1 class="cover_title text-xl max-lg:text-[16px] max-md:text-sm ">Познакомьтесь с коллекцией ножей TUOTOWN</h1>
+					<div class="cover2 left-0"></div>
+				</div>
+				<div class="catolog_box relative bg-[url('/image/catolog_box4.png')] text-white flex items-end p-5 max-md:p-3  wow animate__animated animate__fadeInRight">
+					<h1 class="cover_title text-xl max-lg:text-[16px] max-md:text-sm ">Познакомьтесь с коллекцией ножей TUOTOWN</h1>
+					<div class="cover2 left-0"></div>
+				</div>
+			</div>
+			<div class="catolog_boxs w-full flex justify-between mt-5 gap-5 max-sm:flex-wrap max-sm:justify-center">
+				<div class="catolog_box relative bg-[url('/image/catolog_box5.png')] text-white flex items-end p-5 max-md:p-3 wow animate__animated animate__fadeInLeft">
+					<h1 class="cover_title text-xl max-lg:text-[16px] max-md:text-sm ">Познакомьтесь с коллекцией ножей TUOTOWN</h1>
+					<div class="cover2 left-0"></div>
+				</div>
+				<div class="catolog_box relative bg-[url('/image/catolog_box6.png')] text-white flex items-end p-5 max-md:p-3 wow animate__animated animate__fadeInRight">
+					<h1 class="cover_title text-xl max-lg:text-[16px] max-md:text-sm ">Познакомьтесь с коллекцией ножей TUOTOWN</h1>
+					<div class="cover2 left-0"></div>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="catolog_navbar px-32 py-10 flex justify-between gap-4 max-lg:px-20 max-md:px-12 max-sm:px-4 max-[430px]:px-12
+		wow animate__animated animate__fadeInRight">
+			<div class="catolog_navbar_card bg-[url('/image/catalog_nav1.svg')] bg-cover bg-center max-lg:hidden"></div>
+			<div class="catolog_navbar_card bg-[url('/image/catalog_nav2.svg')] bg-cover bg-center max-lg:hidden"></div>
+			<div class="catolog_navbar_card bg-[url('/image/catalog_nav3.svg')] bg-cover bg-center max-md:hidden "></div>
+			<div class="catolog_navbar_card bg-[url('/image/catalog_nav4.svg')] bg-cover bg-center max-sm:hidden"></div>
+			<div class="catolog_navbar_card bg-[url('/image/catalog_nav5.svg')] bg-cover bg-center max-[430px]:hidden"></div>
+			<div class="catolog_navbar_card bg-[url('/image/catalog_nav6.svg')] bg-cover bg-center max-[430px]:hidden"></div>
+			<div class="catolog_navbar_card bg-[url('/image/catalog_nav7.svg')] bg-cover bg-center"></div>
+			<div class="catolog_navbar_card bg-[url('/image/catalog_nav8.svg')] bg-cover bg-center"></div>
+		</div>
+		<hr>
+		<div class="title_headerBox2 text-white text-center max-[430px]:block wow animate__animated animate__fadeIn ">
+			<h1 class="mt-16 text-3xl max-[430px]:text-lg max-[430px]:mt-8 max-sm:text-xl">Узнавайте первым о новинках и новостях</h1>
+		</div>
+		<div class="input_button1 w-full mt-10 pb-10 max-[430px]:flex max-[430px]:mt-5 wow animate__animated animate__fadeIn ">
+			<input type="email" placeholder="Ваш e-mail" class="input1 p-5 text-white">
+			<button class="button1"><img src="./icon/exit.svg" alt=""></button>
+		</div>
+		<div class="fotter w-full px-20 py-10 text-white flex gap-20 max-lg:p-5 max-lg:block">
+			<div class="fotter_text1 max-lg:w-full wow animate__animated animate__fadeInLeft">
+				<div class="flex gap-10">
+					<img src="./icon/Logo1.svg" alt="">
+					<h1 class="max-lg:text-sm">легендарные ножи, создающие шедевры</h1>
+				</div>
+				<p class="mt-10 text-lg max-lg:text-sm max-sm:text-[12px]">Компания «Tuotown» – эксклюзивный представитель профессиональных кухонных ножей,
+					изготовленных лучшими мастерами Восточной Азии с применением передового европейского оборудования
+					и современных материалов.</p>
+				<p class="mt-10 text-lg max-lg:text-sm max-sm:text-[12px]">Они отличаются идеальным балансом и фантастической остротой. Сочетают в себе вековые
+					традиции и новейшие разработки. Также предлагаем широкий ассортимент сопутствующих товаров.</p>
+			</div>
+			<div class="fotter_text2 max-lg:w-full wow animate__animated animate__fadeInUp">
+				<div class="gap-10">
+					<h1 class="text-2xl max-lg:text-xl max-lg:mt-5">Информация</h1>
+					<ul class="flex gap-6 mt-5 text-gray-400 text-lg max-[430px]:gap-3 max-[430px]:text-sm ">
+						<li>Главная</li>
+						<li>Новости</li>
+						<li>О компании</li>
+						<li>Контакты</li>
+					</ul>
+					<h1 class="text-2xl mt-20 max-lg:mt-5">Каталог</h1>
+					<ul class="flex flex-wrap gap-3 mt-5 text-gray-400 text-lg max-[430px]:text-sm">
+						<li>Кухонные Ножи</li>
+						<li>Складные ножи</li>
+						<li>Точилки для ножей</li>
+						<li>Аксессуары</li>
+					</ul>
+					<div class="fotter_text2_icon mt-20 flex gap-10 max-lg:mt-5 items-center">
+						<h1 class="text-2xl max-[430px]:text-sm">Мы в соцсетях</h1>
+						<div class="fotter_icons flex gap-5 cursor-pointer">
+							<img src="./icon/icon1.svg" alt="">
+							<img src="./icon/icon2.svg" alt="">
+							<img src="./icon/icon3.svg" alt="">
+							<img src="./icon/icon4.svg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="fotter_text3 wow animate__animated animate__fadeInRight">
+				<div class="max-lg:mt-5">
+					<h1 class="text-2xl max-sm:text-xl max-[430px]:text-lg">Контактная информация</h1>
+					<h1 class="text-3xl mt-20 number cursor-pointer max-lg:mt-5 max-sm:text-2xl">+7 (981) 120-11-17</h1>
+					<p class="text-gray-400 mt-5 max-lg:mt-1 text-lg">tuotown@mail.ru</p>
+					<p class="text-gray-400 mt-8 max-lg:mt-1 text-lg">08:00 — 18:00, ежедневно</p>
+					<p class="text-gray-400 mt-8 max-lg:mt-1 text-lg max-[430px]:text-sm">Россия, Москва, МКАД, 19-й километр, вл20с1, вход Ф, 22-68-70</p>
+					<img src="./icon/logo2.svg" alt="" class="mt-16 max-lg:mt-4">
+				</div>
+			</div>
+		</div>
+		<div class="end w-full px-28 py-10 text-gray-400 flex justify-between max-lg:px-8 max-sm:px-4">
+			<p class="max-lg:text-sm max-sm:text-[12px] max-sm:w-[400px] max-[430px]:text-[11px] max-[430px]:w-[300px]">TUOTOWN © 2021 Торговая марка TUOTOWN зарегистрирована. Все права защищены и принадлежат правообладателям.</p>
+			<img src="./icon/icon5.svg" alt="" class="max-[430px]:w-28">
+		</div>
+	</div>
+</body>
+<script src="./js/main.js"></script>
+<script src="./wow.min.js"></script>
+<script>
+	new WOW().init();
+</script>
+</html>

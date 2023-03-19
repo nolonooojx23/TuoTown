@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>TuoTown</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+	<div class="cont w-full bg-neutral-700">
+		<nav class="navbar w-full flex items-center text-white justify-between">
+			<div class="flex gap-4 p-5 ml-32 max-lg:ml-10 max-md:gap-3 max-sm:ml-0 max-[430px]:ml-0 items-center ">
+				<img src="./icon/navIcon1.svg" alt="" class="menuBtn cursor-pointer" />
+				<a href="map.html"><img src="./icon/navIcon2.svg" alt="" /></a>
+				<a href="#" class="number ml-4 max-md:text-[14px] max-sm:text-sm max-sm:hidden">+8 981 120-11-17</a>
+			</div>
+			<div class="logo mx-auto max-sm:hidden">
+				<img src="./icon/navIcon3.svg" alt="" />
+			</div>
+			<div class="right flex gap-5 ml-20 items-center mr-32 max-lg:mr-10 max-sm:mr-4 max-[430px]:mr-0 max-[430px]:ml-0">
+					<img src="./icon/navIcon4.svg" alt="" class="show_basket_btn cursor-pointer" />
+			
+				<img src="./icon/navIcon5.svg" alt="" class="loginBtn cursor-pointer" />
+				<a href="servic.html">
+					<img src="./icon/navIcon6.svg" alt="" class="max-sm:hidden" />
+				</a>
+				<div class="logo mx-auto hidden max-sm:block max-sm:mr-1">
+					<img src="./icon/navIcon3.svg" alt="" />
+				</div>
+			</div>
+		</nav>
+		<div class="menu fixed p-5 px-10 text-white">
+			<button class="exit"><img src="./icon/exit.svg" alt=""></button>
+			<ul class="mt-16 text-xl uppercase">
+				<li class="mt-5">Кухонные ножи TUOTOWN</li>
+				<li class="mt-5">Складные ножи TUOTOWN</li>
+				<li class="mt-5">Кухонные ножи QXF</li>
+				<li class="mt-5">Точильные камни</li>
+				<li class="mt-5">Наборы для BBQ</li>
+				<li class="mt-5">Кухонные принадлежности</l>
+				<li class="mt-5">Туристические товары</li>
+			</ul>
+			<ul class="mt-16 text-lg uppercase text-gray-500">
+				<li class="mt-3">Новости</li>
+				<li class="mt-3">О компании</li>
+				<li class="mt-3">Контакты</li>
+				<li class="mt-3">Как проехать</li>
+			</ul>
+		</div>
+		<div class="login_page w-full h-full">
+			<div
+				class="login-box p-10 text-white text-center max-lg:p-5 max-lg:w-[370px] max-md:w-[350px] wow animate__animated">
+				<img src="./icon/exit.svg" alt="" class="Login_exitBtn cursor-pointer w-4 h-4">
+				<h2 class="text-4xl max-md:text-3xl">Welcome back</h2>
+				<p class="mt-1 text-xl max-md:text-lg">Enter your details</p>
+				<form class="text-left mt-8">
+					<div class="form-group">
+						<label for="email">
+							Email
+						</label>
+						<i class="fa-solid fa-user"></i>
+						<input type="email" id="email" placeholder="Your email" required>
+					</div>
+					<div class="form-group">
+						<label for="password">
+							Password
+						</label>
+						<i class="fa-solid fa-key"></i>
+						<input type="password" id="password" placeholder="Your password" required>
+					</div>
+					<a class="forgot">
+						Forgot your password?
+					</a>
+					<input type="submit" value="Log In">
+				</form>
+			</div>
+		</div>
+		<div class="slider w-full relative">
+			<div class="main_slider">
+				<img src="./image/slider1.png" alt="" class="w-full h-full max-lg:hidden">
+				<img src="./image/slider1.2.png" alt="" class="main_slider_img2 hidden max-lg:block w-full h-full">
+			</div>
+			<div class="text1 absolute left-32 p-3 max-lg:left-10 max-lg:top-28 
+			max-md:top-20 text-white max-[430px]:top-10 wow animate__animated animate__fadeInUp">
+				<h1 class="title text-5xl max-lg:text-4xl max-md:text-3xl max-sm:text-2xl max-[430px]:text-lg">Исключительное
+					качество <br> без компромиссов</h1>
+				<p
+					class="mt-8 text-2xl max-lg:text-xl max-md:text-lg max-md:mt-6 max-sm:mt-4 max-[430px]:text-[12px] max-[430px]:mt-1 max-[430px]:leading-4">
+					Ножи «Tuotown» – это главный инструмент <br> поваров и секрет кулинарного мастерства</p>
+				<button
+					class="header_btn p-4 px-7 mt-8 max-lg:mt-4 max-sm:p-3 max-sm:text-sm max-[430px]:p-1.5 max-[430px]:text-[9px]">ПОДРОБНЕЕ</button>
+			</div>
+			<div class="slider_indicators w-full absolute text-white flex items-center justify-between px-28 max-lg:px-16 max-sm:px-10 max-sm:bottom-5 max-[430px]:px-5 max-[430px]:-bottom-8  wow animate__animated animate__fadeInUp
+			">
+				<a href="product.html"><button
+						class="prev1 p-4 max-sm:p-3 max-sm:text-sm text-white max-[430px]:p-2 max-[430px]:text-[11px]"><i
+							class="fa-solid fa-arrow-left "></i></button></a>
+				<div class="spans justify-center flex gap-8">
+					<span class="span1 max-[430px]:text[11px]">1</span>
+					<a href="catalog1.html"><span class=" max-[430px]:text[11px]">2</span></a>
+					<a href="catalog2.html"><span class=" max-[430px]:text[11px]">3</span></a>
+					<a href="product.html"><span class=" max-[430px]:text[11px]">4</span></a>
+				</div>
+				<a href="catalog1.html"><button
+						class="next1 p-4 max-sm:p-3 max-sm:text-sm text-white max-[430px]:p-2 max-[430px]:text-[11px]"><i
+							class="fa-solid fa-arrow-right "></i></button></a>
+			</div>
+		</div>
+		<!-----------------media [430px] start------------------>
+		<div class="info px-28 py-16 max-lg:p-20 max-md:px-12 max-sm:px-5 hidden max-sm:block">
+			<div class="info_box1 flex gap-20 items-center max-lg:gap-12 max-sm:gap-5 max-[430px]:flex-col ">
+				<div class="wow animate__animated animate__fadeInLeft"><img src="./image/info_img1.png" alt=""></div>
+				<div class="text-white w-[500px] max-[430px]:w-full wow animate__animated animate__fadeInLeft">
+					<h1 class="text-4xl max-lg:text-2xl max-md:text-xl">Исключительное качество <br> без компромиссов</h1>
+					<p class="text-xl mt-10 max-md:text-lg max-[430px]:text-lg">Ножи «Tuotown» — это главный инструмент поваров
+						и секрет кулинарного мастерства</p>
+				</div>
+			</div>
+			<div class="info_box1 flex gap-20 mt-20 items-center max-lg:gap-12 max-sm:gap-5 max-[430px]:flex-col ">
+				<div class=" wow animate__animated animate__fadeInLeft"><img src="./image/info_img2.png" alt=""
+						class="hidden max-sm:block"></div>
+				<div class="text-white w-[500px] max-[430px]:w-full wow animate__animated animate__fadeInLeft">
+					<h1 class="text-4xl max-lg:text-2xl max-md:text-xl">Исключительное качество <br> без компромиссов</h1>
+					<p class="text-xl mt-10 max-md:text-lg max-[430px]:text-lg">Ножи «Tuotown» — это главный инструмент поваров
+						и секрет кулинарного мастерства</p>
+				</div>
+				<div class="wow animate__animated animate__fadeInLeft"><img src="./image/info_img2.png" alt=""
+						class="max-sm:hidden"></div>
+			</div>
+		</div>
+		<div
+			class="swiper bg-[#272727] py-20 max-md:py-10 wow animate__animated animate__fadeInUp hidden max-[430px]:block">
+			<swiper-container class="mySwiper rounded-3xl object-contain" pagination="true" pagination-clickable="true"
+				navigation="true" space-between="30" centered-slides="true" autoplay-delay="2500"
+				autoplay-disable-on-interaction="false">
+				<swiper-slide class="h-[500px] max-lg:h-[400px] max-md:h-[300px] max-sm:h-[250px]"><img src="./image/swiper.png"
+						alt=""></swiper-slide>
+				<swiper-slide class="h-[500px] max-lg:h-[400px] max-md:h-[300px] max-sm:h-[250px]"><img src="./image/swiper.png"
+						alt=""></swiper-slide>
+				<swiper-slide class="h-[500px] max-lg:h-[400px] max-md:h-[300px] max-sm:h-[250px]"><img src="./image/swiper.png"
+						alt=""></swiper-slide>
+			</swiper-container>
+		</div>
+		<div
+			class="product_info py-10 px-36 items-center gap-60 bg-[#272727] max-md:flex-col max-md:gap-12 max-[430px]:px-12 max-lg:px-16 hidden max-sm:flex">
+			<div class="product_info_img rounded-2xl wow animate__animated animate__fadeInLeft">
+				<h1 class="text-2xl border-b-2 border-[red] text-white text-center hidden max-md:block">Характеристики</h1>
+				<img src="./image/product_info_img.png" alt="" class="max-md:mt-12 rounded-3xl">
+			</div>
+			<div class="product_info_text w-[400px] max-[430px]:w-full text-white wow animate__animated animate__fadeInRight">
+				<h1 class="text-2xl border-b border-[red] max-md:hidden">Характеристики</h1>
+				<div class="border-b flex justify-between mt-10 border-[#4F4F4F] text-lg py-1">
+					<p>Длина лезвия</p>
+					<p>24 см</p>
+				</div>
+				<div class="border-b flex justify-between mt-5 border-[#4F4F4F] text-lg py-1">
+					<p>Длина лезвия</p>
+					<p>24 см</p>
+				</div>
+				<div class="border-b flex justify-between mt-5 border-[#4F4F4F] text-lg py-1">
+					<p>Длина лезвия</p>
+					<p>24 см</p>
+				</div>
+				<div class="border-b flex justify-between mt-5 border-[#4F4F4F] text-lg py-1">
+					<p>Длина лезвия</p>
+					<p>24 см</p>
+				</div>
+				<div class=" flex gap-2 items-center text-xl mt-10">
+					<img src="./icon/add.svg" alt="" class="cursor-pointer">
+					<p>больше характеристик</p>
+				</div>
+			</div>
+		</div>
+		<div class="headerBox2 w-full px-16 items-center justify-center hidden max-sm:block">
+			<div class="title_headerBox2 text-white text-center w-[300px] wow animate__animated animate__fadeIn">
+				<h1 class="mt-16 text-3xl py-2 border-b-2 border-[red]">Аксессуары</h1>
+			</div>
+		</div>
+		<div class="headerBoxs2 items-center justify-around mt-10 hidden max-sm:flex">
+			<div class="flex flex-wrap items-center justify-around px-12">
+				<div class="main-box mt-4 max-lg:mt-6  wow animate__animated animate__fadeInLeft">
+					<div class="box rounded-2xl bg-neutral-800 flex
+					items-center bg-[url('./image/box1.png}')] bg-no-repeat bg-center relative">
+					<span class="bg-[url('./image/box1.png')] bg-no-repeat bg-center"></span>
+					<div class="add_icons flex justify-end absolute top-0 right-0 p-5 gap-2 w-full h-10">
+						<div class="add_icon_img flex items-center gap-3 p-2">
+							<img src="./icon/add.svg" alt="" class="cursor-pointer w-5 h-5">
+							<img src="./icon/navIcon4.svg" alt="" class="basket_add cursor-pointer w-5 h-5">
+						</div>
+					</div>
+					<img src="./image/box1.png" alt="" class = "boxImg">
+				</div>
+					<div class="box-text text-xl mt-5 text-white">
+						<p class = "box-title">Складной нож SQ01-B</p>
+						<div class=" flex items-center gap-5"><p class="boxPrice text-sm">850 р.</p><p class="box-text-title-p">новинка</p></div>
+					</div>
+				</div>
+				<div class="main-box mt-4 max-lg:mt-6  wow animate__animated animate__fadeInLeft">
+					<div class="box rounded-2xl bg-neutral-800 flex
+					items-center bg-[url('./image/box2.png}')] bg-no-repeat bg-center relative">
+					<span class="bg-[url('./image/box2.png')] bg-no-repeat bg-center"></span>
+					<div class="add_icons flex justify-end absolute top-0 right-0 p-5 gap-2 w-full h-10">
+						<div class="add_icon_img flex items-center gap-3 p-2">
+							<img src="./icon/add.svg" alt="" class="cursor-pointer w-5 h-5">
+							<img src="./icon/navIcon4.svg" alt="" class="basket_add cursor-pointer w-5 h-5">
+						</div>
+					</div>
+					<img src="./image/box2.png" alt="" class = "boxImg">
+				</div>
+					<div class="box-text text-xl mt-5 text-white">
+						<p class = "box-title">Складной нож SQ02-B</p>
+						<div class=" flex items-center gap-5"><p class="boxPrice text-sm">850 р.</p><p class="box-text-title-p">новинка</p></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="headerBox2 w-full px-16 mt-32 items-center justify-center hidden max-sm:flex">
+			<div class="title_headerBox2 text-white text-center w-[300px] wow animate__animated animate__fadeIn">
+				<h1 class="mt-16 text-3xl py-2 border-b-2 border-[red]">Смотрите также</h1>
+			</div>
+		</div>
+		<div class="headerBoxs2 flex-wrap items-center justify-around mt-10 px-12 hidden max-sm:flex">
+			<div class="main-box max-md:mt-5 wow animate__animated animate__fadeInLeft">
+				<div class="box rounded-2xl bg-neutral-800 flex
+				items-center bg-[url('./image/box1.png}')] bg-no-repeat bg-center relative">
+				<span class="bg-[url('./image/box1.png')] bg-no-repeat bg-center"></span>
+				<div class="add_icons flex justify-end absolute top-0 right-0 p-5 gap-2 w-full h-10">
+					<div class="add_icon_img flex items-center gap-3 p-2">
+						<img src="./icon/add.svg" alt="" class="cursor-pointer w-5 h-5">
+						<img src="./icon/navIcon4.svg" alt="" class="basket_add cursor-pointer w-5 h-5">
+					</div>
+				</div>
+				<img src="./image/box1.png" alt="" class = "boxImg">
+			</div>
+				<div class="box-text text-xl mt-5 text-white">
+					<p class = "box-title">Складной нож SQ03-B</p>
+					<div class=" flex items-center gap-5"><p class="boxPrice text-sm">850 р.</p><p class="box-text-title-p">новинка</p></div>
+				</div>
+			</div>
+			<div class="main-box max-md:mt-5 wow animate__animated animate__fadeInLeft">
+				<div class="box rounded-2xl bg-neutral-800 flex
+				items-center bg-[url('./image/box2.png}')] bg-no-repeat bg-center relative">
+				<span class="bg-[url('./image/box2.png')] bg-no-repeat bg-center"></span>
+				<div class="add_icons flex justify-end absolute top-0 right-0 p-5 gap-2 w-full h-10">
+					<div class="add_icon_img flex items-center gap-3 p-2">
+						<img src="./icon/add.svg" alt="" class="cursor-pointer w-5 h-5">
+						<img src="./icon/navIcon4.svg" alt="" class="basket_add cursor-pointer w-5 h-5">
+					</div>
+				</div>
+				<img src="./image/box2.png" alt="" class = "boxImg">
+			</div>
+				<div class="box-text text-xl mt-5 text-white">
+					<p class = "box-title">Складной нож SQ04-B</p>
+					<div class=" flex items-center gap-5"><p class="boxPrice text-sm">850 р.</p><p class="box-text-title-p">новинка</p></div>
+				</div>
+			</div>
+		</div>
+		<!-----------------media [430px] end------------------>
+		<div
+			class="headerCard flex w-full text-gray-500
+			items-center h-48 bg-neutral-700 px-32 max-lg:px-10 max-sm:px-4 max-[430px]:p-1 max-sm:hidden wow animate__animated animate__fadeInRight">
+			<div class="card flex content-center items-center flex-col h-full place-content-center cursor-pointer">
+				<img src="image/headerCardIcon-1.png" class="w-[45px] h-[45px]" alt="">
+				<p class="mt-5 text-lg max-md:text-sm max-sm:text-[12px] max-[430px">Кухонные ножи</p>
+			</div>
+			<div class="card flex content-center items-center flex-col h-full place-content-center cursor-pointer">
+				<img src="image/headerCardIcon-2.png" class="w-[45px] h-[45px]" alt="">
+				<p class="mt-5 text-lg max-md:text-sm max-sm:text-[12px] max-[430px">Складные ножи</p>
+			</div>
+			<div class="card flex content-center items-center flex-col h-full place-content-center cursor-pointer">
+				<img src="image/headerCardIcon-3.png" class="w-[45px] h-[45px]" alt="">
+				<p class="mt-5 text-lg max-md:text-sm max-sm:text-[12px] max-[430px">Точилки для ножей</p>
+			</div>
+			<div class="card flex content-center items-center flex-col h-full place-content-center cursor-pointer">
+				<img src="image/headerCardIcon-4.png" class="w-[45px] h-[45px]" alt="">
+				<p class="mt-5 text-lg max-md:text-sm max-sm:text-[12px] max-[430px">Аксессуары для кухни</p>
+			</div>
+		</div>
+		<div class="headerBox w-full px-10 py-20 max-lg:px-5 bg-neutral-700 flex flex-wrap justify-center max-[430px]:px-0 max-sm:hidden">
+			<div class="headerBoxs flex flex-wrap justify-between gap-4 p-4 max-md:p-2 max-lg:justify-center max-lg:gap-5 max-md:gap-4 max-sm:gap-5">
+				<div class="main_big wow animate__animated animate__fadeInLeft">
+					<div class="box_big rounded-2xl bg-neutral-800 cursor-pointer max-[430px]:hidden">
+						<div class="w-full h-full flex items-end box_big_text px-7 py-10">
+							<b class="text-white text-xl max-md:text-lg">Познакомьтесь с коллекцией ножей TUOTOWN</b>
+						</div>
+					</div>
+				</div>
+				<div class="main-box wow animate__animated animate__fadeInRight">
+					<div class="box rounded-2xl bg-neutral-800 flex
+					items-center bg-[url('./image/box1.png}')] bg-no-repeat bg-center relative">
+					<span class="bg-[url('./image/box1.png')] bg-no-repeat bg-center"></span>
+					<div class="add_icons flex justify-end absolute top-0 right-0 p-5 gap-2 w-full h-10">
+						<div class="add_icon_img flex items-center gap-3 p-2">
+							<img src="./icon/add.svg" alt="" class="cursor-pointer w-5 h-5">
+							<img src="./icon/navIcon4.svg" alt="" class="basket_add cursor-pointer w-5 h-5">
+						</div>
+					</div>
+					<img src="./image/box1.png" alt="" class = "boxImg">
+				</div>
+					<div class="box-text text-xl mt-5 text-white">
+						<p class = "box-title">Складной нож SQ05-B</p>
+						<div class=" flex items-center gap-5"><p class="boxPrice text-sm">850 р.</p><p class="box-text-title-p">новинка</p></div>
+					</div>
+				</div>
+
+				<div class="main-box max-sm:hidden wow animate__animated animate__fadeInRight">
+					<div class="box rounded-2xl bg-neutral-800 flex
+					items-center bg-[url('./image/box2.png}')] bg-no-repeat bg-center relative">
+					<span class="bg-[url('./image/box2.png')] bg-no-repeat bg-center"></span>
+					<div class="add_icons flex justify-end absolute top-0 right-0 p-5 gap-2 w-full h-10">
+						<div class="add_icon_img flex items-center gap-3 p-2">
+							<img src="./icon/add.svg" alt="" class="cursor-pointer w-5 h-5">
+							<img src="./icon/navIcon4.svg" alt="" class="basket_add cursor-pointer w-5 h-5">
+						</div>
+					</div>
+					<img src="./image/box2.png" alt="" class = "boxImg">
+				</div>
+					<div class="box-text text-xl mt-5 text-white">
+						<p class = "box-title">Складной нож SQ06-B</p>
+						<div class=" flex items-center gap-5"><p class="boxPrice text-sm">850 р.</p><p class="box-text-title-p">новинка</p></div>
+					</div>
+				</div>
+
+				<div class="main-box wow animate__animated animate__fadeInLeft">
+					<div class="box rounded-2xl bg-neutral-800 flex
+					items-center bg-[url('./image/box1.png}')] bg-no-repeat bg-center relative">
+					<span class="bg-[url('./image/box1.png')] bg-no-repeat bg-center"></span>
+					<div class="add_icons flex justify-end absolute top-0 right-0 p-5 gap-2 w-full h-10">
+						<div class="add_icon_img flex items-center gap-3 p-2">
+							<img src="./icon/add.svg" alt="" class="cursor-pointer w-5 h-5">
+							<img src="./icon/navIcon4.svg" alt="" class="basket_add cursor-pointer w-5 h-5">
+						</div>
+					</div>
+					<img src="./image/box1.png" alt="" class = "boxImg">
+				</div>
+					<div class="box-text text-xl mt-5 text-white">
+						<p class = "box-title">Складной нож SQ07-B</p>
+						<div class=" flex items-center gap-5"><p class="boxPrice text-sm">850 р.</p><p class="box-text-title-p">новинка</p></div>
+					</div>
+				</div>
+
+				<div class="main-box wow animate__animated animate__fadeInLeft">
+					<div class="box rounded-2xl bg-neutral-800 flex
+					items-center bg-[url('./image/box2.png}')] bg-no-repeat bg-center relative">
+					<span class="bg-[url('./image/box2.png')] bg-no-repeat bg-center"></span>
+					<div class="add_icons flex justify-end absolute top-0 right-0 p-5 gap-2 w-full h-10">
+						<div class="add_icon_img flex items-center gap-3 p-2">
+							<img src="./icon/add.svg" alt="" class="cursor-pointer w-5 h-5">
+							<img src="./icon/navIcon4.svg" alt="" class="basket_add cursor-pointer w-5 h-5">
+						</div>
+					</div>
+					<img src="./image/box2.png" alt="" class = "boxImg">
+				</div>
+					<div class="box-text text-xl mt-5 text-white">
+						<p class = "box-title">Складной нож SQ08-B</p>
+						<div class=" flex items-center gap-5"><p class="boxPrice text-sm">850 р.</p><p class="box-text-title-p">новинка</p></div>
+					</div>
+				</div>
+
+				<div
+					class="box_instagram rounded-2xl overflow-hidden  bg-[url('./image/box3.png')] bg-no-repeat bg-center max-lg:hidden wow animate__animated animate__fadeInRight">
+					<span class="bg-[url('./image/box3.png')] bg-no-repeat bg-center"></span>
+				</div>
+
+				<div class="main-box max-lg:hidden wow animate__animated animate__fadeInRight">
+					<div class="box rounded-2xl bg-neutral-800 flex
+					items-center bg-[url('./image/box1.png}')] bg-no-repeat bg-center relative">
+					<span class="bg-[url('./image/box1.png')] bg-no-repeat bg-center"></span>
+					<div class="add_icons flex justify-end absolute top-0 right-0 p-5 gap-2 w-full h-10">
+						<div class="add_icon_img flex items-center gap-3 p-2">
+							<img src="./icon/add.svg" alt="" class="cursor-pointer w-5 h-5">
+							<img src="./icon/navIcon4.svg" alt="" class="basket_add cursor-pointer w-5 h-5">
+						</div>
+					</div>
+					<img src="./image/box1.png" alt="" class = "boxImg">
+				</div>
+					<div class="box-text text-xl mt-5 text-white">
+						<p class = "box-title">Складной нож SQ09-B</p>
+						<div class=" flex items-center gap-5"><p class="boxPrice text-sm">850 р.</p><p class="box-text-title-p">новинка</p></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr class="max-[430px]:hidden">
+		<div class="headerBox2 w-full px-16 py-20 max-sm:px-8 max-[430px]:py-10 max-sm:hidden">
+			<div class="title_headerBox2 text-white text-center max-sm:hidden">
+				<h1 class="mt-16 text-3xl max-lg:text-2xl max-md:text-xl max-lg:mt-2 wow animate__animated animate__fadeInUp">
+					Узнавайте первым о новинках и новостях
+				</h1>
+			</div>
+			<div class="input_button1 w-full mt-10 max-sm:hidden wow animate__animated animate__fadeInUp">
+				<input type="email" placeholder="Ваш e-mail" class="input1 p-5 text-white">
+				<button class="button1"><img src="./icon/exit.svg" alt=""></button>
+			</div>
+			<div class="headerBoxs2 flex items-center justify-around mt-20 flex-wrap max-lg:gap-5 max-sm:gap-4 max-[430px]:mt-0 ">
+				<div class="main-box max-md:mt-5 wow animate__animated animate__fadeInLeft">
+					<div class="box rounded-2xl bg-neutral-800 flex
+					items-center bg-[url('./image/box2.png}')] bg-no-repeat bg-center relative">
+					<span class="bg-[url('./image/box2.png')] bg-no-repeat bg-center"></span>
+					<div class="add_icons flex justify-end absolute top-0 right-0 p-5 gap-2 w-full h-10">
+						<div class="add_icon_img flex items-center gap-3 p-2">
+							<img src="./icon/add.svg" alt="" class="cursor-pointer w-5 h-5">
+							<img src="./icon/navIcon4.svg" alt="" class="basket_add cursor-pointer w-5 h-5">
+						</div>
+					</div>
+					<img src="./image/box2.png" alt="" class = "boxImg">
+				</div>
+					<div class="box-text text-xl mt-5 text-white">
+						<p class = "box-title">Складной нож SQ010-B</p>
+						<div class=" flex items-center gap-5"><p class="boxPrice text-sm">850 р.</p><p class="box-text-title-p">новинка</p></div>
+					</div>
+				</div>
+				<div class="main-box max-md:mt-5 wow animate__animated animate__fadeInLeft">
+					<div class="box rounded-2xl bg-neutral-800 flex
+					items-center bg-[url('./image/box1.png}')] bg-no-repeat bg-center relative">
+					<span class="bg-[url('./image/box1.png')] bg-no-repeat bg-center"></span>
+					<div class="add_icons flex justify-end absolute top-0 right-0 p-5 gap-2 w-full h-10">
+						<div class="add_icon_img flex items-center gap-3 p-2">
+							<img src="./icon/add.svg" alt="" class="cursor-pointer w-5 h-5">
+							<img src="./icon/navIcon4.svg" alt="" class="basket_add cursor-pointer w-5 h-5">
+						</div>
+					</div>
+					<img src="./image/box1.png" alt="" class = "boxImg">
+				</div>
+					<div class="box-text text-xl mt-5 text-white">
+						<p class = "box-title">Складной нож SQ011-B</p>
+						<div class=" flex items-center gap-5"><p class="boxPrice text-sm">850 р.</p><p class="box-text-title-p">новинка</p></div>
+					</div>
+				</div>
+				<div class="main-box max-md:mt-5 wow animate__animated animate__fadeInRight">
+					<div class="box rounded-2xl bg-neutral-800 flex
+					items-center bg-[url('./image/box2.png}')] bg-no-repeat bg-center relative">
+					<span class="bg-[url('./image/box2.png')] bg-no-repeat bg-center"></span>
+					<div class="add_icons flex justify-end absolute top-0 right-0 p-5 gap-2 w-full h-10">
+						<div class="add_icon_img flex items-center gap-3 p-2">
+							<img src="./icon/add.svg" alt="" class="cursor-pointer w-5 h-5">
+							<img src="./icon/navIcon4.svg" alt="" class="basket_add cursor-pointer w-5 h-5">
+						</div>
+					</div>
+					<img src="./image/box2.png" alt="" class = "boxImg">
+				</div>
+					<div class="box-text text-xl mt-5 text-white">
+						<p class = "box-title">Складной нож SQ012-B</p>
+						<div class=" flex items-center gap-5"><p class="boxPrice text-sm">850 р.</p><p class="box-text-title-p">новинка</p></div>
+					</div>
+				</div>
+				<div class="main-box max-md:mt-5 wow animate__animated animate__fadeInRight">
+					<div class="box rounded-2xl bg-neutral-800 flex
+					items-center bg-[url('./image/box1.png}')] bg-no-repeat bg-center relative">
+					<span class="bg-[url('./image/box1.png')] bg-no-repeat bg-center"></span>
+					<div class="add_icons flex justify-end absolute top-0 right-0 p-5 gap-2 w-full h-10">
+						<div class="add_icon_img flex items-center gap-3 p-2">
+							<img src="./icon/add.svg" alt="" class="cursor-pointer w-5 h-5">
+							<img src="./icon/navIcon4.svg" alt="" class="basket_add cursor-pointer w-5 h-5">
+						</div>
+					</div>
+					<img src="./image/box1.png" alt="" class = "boxImg">
+				</div>
+					<div class="box-text text-xl mt-5 text-white">
+						<p class = "box-title">Складной нож SQ013-B</p>
+						<div class=" flex items-center gap-5"><p class="boxPrice text-sm">850 р.</p><p class="box-text-title-p">новинка</p></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr class="max-sm:hidden">
+		<div class="headerBox2 w-full px-16 py-20 max-sm:px-8 max-[430px]:py-10 max-sm:hidden">
+			<div
+				class="title_headerBox2 text-white flex justify-center gap-20 text-2xl max-[430px]:text-xl wow animate__animated animate__fadeIn">
+				<p>НОВИНКИ</p>
+				<p>ПОПУЛЯРНОЕ</p>
+			</div>
+			<div
+				class="headerBoxs2 flex items-center justify-around mt-20 flex-wrap max-lg:gap-5 max-sm:gap-4 max-[430px]:mt-0">
+				<div class="main-box max-md:mt-5 wow animate__animated animate__fadeInLeft">
+					<div class="box rounded-2xl bg-neutral-800 flex
+					items-center bg-[url('./image/box1.png}')] bg-no-repeat bg-center relative">
+					<span class="bg-[url('./image/box1.png')] bg-no-repeat bg-center"></span>
+					<div class="add_icons flex justify-end absolute top-0 right-0 p-5 gap-2 w-full h-10">
+						<div class="add_icon_img flex items-center gap-3 p-2">
+							<img src="./icon/add.svg" alt="" class="cursor-pointer w-5 h-5">
+							<img src="./icon/navIcon4.svg" alt="" class="basket_add cursor-pointer w-5 h-5">
+						</div>
+					</div>
+					<img src="./image/box1.png" alt="" class = "boxImg">
+				</div>
+					<div class="box-text text-xl mt-5 text-white">
+						<p class = "box-title">Складной нож SQ014-B</p>
+						<div class=" flex items-center gap-5"><p class="boxPrice text-sm">850 р.</p><p class="box-text-title-p">новинка</p></div>
+					</div>
+				</div>
+				<div class="main-box max-md:mt-5 wow animate__animated animate__fadeInLeft">
+					<div class="box rounded-2xl bg-neutral-800 flex
+					items-center bg-[url('./image/box2.png}')] bg-no-repeat bg-center relative">
+					<span class="bg-[url('./image/box2.png')] bg-no-repeat bg-center"></span>
+					<div class="add_icons flex justify-end absolute top-0 right-0 p-5 gap-2 w-full h-10">
+						<div class="add_icon_img flex items-center gap-3 p-2">
+							<img src="./icon/add.svg" alt="" class="cursor-pointer w-5 h-5">
+							<img src="./icon/navIcon4.svg" alt="" class="basket_add cursor-pointer w-5 h-5">
+						</div>
+					</div>
+					<img src="./image/box2.png" alt="" class = "boxImg">
+				</div>
+					<div class="box-text text-xl mt-5 text-white">
+						<p class = "box-title">Складной нож SQ015-B</p>
+						<div class=" flex items-center gap-5"><p class="boxPrice text-sm">850 р.</p><p class="box-text-title-p">новинка</p></div>
+					</div>
+				</div>
+				<div class="main-box max-md:mt-5 wow animate__animated animate__fadeInRight">
+					<div class="box rounded-2xl bg-neutral-800 flex
+					items-center bg-[url('./image/box1.png}')] bg-no-repeat bg-center relative">
+					<span class="bg-[url('./image/box1.png')] bg-no-repeat bg-center"></span>
+					<div class="add_icons flex justify-end absolute top-0 right-0 p-5 gap-2 w-full h-10">
+						<div class="add_icon_img flex items-center gap-3 p-2">
+							<img src="./icon/add.svg" alt="" class="cursor-pointer w-5 h-5">
+							<img src="./icon/navIcon4.svg" alt="" class="basket_add cursor-pointer w-5 h-5">
+						</div>
+					</div>
+					<img src="./image/box1.png" alt="" class = "boxImg">
+				</div>
+					<div class="box-text text-xl mt-5 text-white">
+						<p class = "box-title">Складной нож SQ016-B</p>
+						<div class=" flex items-center gap-5"><p class="boxPrice text-sm">850 р.</p><p class="box-text-title-p">новинка</p></div>
+					</div>
+				</div>
+				<div class="main-box max-md:mt-5 wow animate__animated animate__fadeInRight">
+					<div class="box rounded-2xl bg-neutral-800 flex
+					items-center bg-[url('./image/box2.png}')] bg-no-repeat bg-center relative">
+					<span class="bg-[url('./image/box2.png')] bg-no-repeat bg-center"></span>
+					<div class="add_icons flex justify-end absolute top-0 right-0 p-5 gap-2 w-full h-10">
+						<div class="add_icon_img flex items-center gap-3 p-2">
+							<img src="./icon/add.svg" alt="" class="cursor-pointer w-5 h-5">
+							<img src="./icon/navIcon4.svg" alt="" class="basket_add cursor-pointer w-5 h-5">
+						</div>
+					</div>
+					<img src="./image/box2.png" alt="" class = "boxImg">
+				</div>
+					<div class="box-text text-xl mt-5 text-white">
+						<p class = "box-title">Складной нож SQ017-B</p>
+						<div class=" flex items-center gap-5"><p class="boxPrice text-sm">850 р.</p><p class="box-text-title-p">новинка</p></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-about w-full px-20 py-20 bg-neutral-700 max-lg:p-10 max-sm:p-5 max-sm:hidden">
+			<div class="about-card flex">
+				<img src="./image/about_text2.jpg" alt=""
+					class="wow animate__animated animate__fadeInLeft max-md:w-[290px] rounded-2xl h-[320px]" >
+				<div
+					class="about-text ml-20 max-sm:ml-5 max-[430px]:ml-3 text-white wow animate__animated animate__fadeInRight">
+					<h1 class="text-4xl max-md:text-2xl max-lg:text-3xl max-sm:text-lg max-[430px]:hidden ">«Tuotown» –
+						легендарные ножи, <br> создающие шедевры</h1>
+					<p class=" mt-7 text-lg max-md:text-sm max-sm:text-[12px] max-[430px]:text-[10px]">Компания «Tuotown» –
+						эксклюзивный представитель профессиональных кухонных ножей,
+						изготовленных лучшими мастерами Восточной Азии с применением передового европейского оборудования и
+						современных материалов. Они отличаются идеальным балансом и фантастической остротой. Сочетают в себе вековые
+						традиции и новейшие разработки. Также предлагаем широкий ассортимент сопутствующих товаров.</p>
+				</div>
+			</div>
+			<div class="about-card flex max-[430px]:items-center mt-10 pr-32 max-lg:pr-0">
+				<div class="about-text text-white wow animate__animated animate__fadeInLeft">
+					<p class="max-md:text-sm max-sm:text-[12px] max-[430px]:text-[10px]">Истинная красота ножа — совершённая
+						функциональность и визуальная гармония. Этот предмет издревле
+						сопутствовал человеку: от зари цивилизации до сегодняшних дней. На протяжении всей истории человечества
+						он был верным помощником, незаменимым инструментом и грозным оружием. Предлагаем изделия Hi-end качества
+						по доступным ценам настоящим ценителям японских ножей.</p>
+					<p class="mt-8 max-lg:hidden">Отличительной чертой нашего интернет-магазина являются уникальные торговые
+						предложения,
+						эксклюзивность продукции, неизменно высокое качество и выгодные цены. Осуществляем продажи элитных японских
+						кухонных ножей для профессионалов и любителей. В обширной ассортиментной линейке представлены изделия
+						для различных потребностей и любого бюджета — от столовых приборов до шеф-ножей.</p>
+					<h1 class="mt-8 text-3xl max-md:text-xl max-sm:text-lg max-[430px]:hidden">Ножи «Tuotown» – это главный
+						инструмент поваров и секрет кулинарного мастерства</h1>
+				</div>
+				<img src="./image/about_text3.jpg" alt=""
+					class="h-[320px] ml-10 max-md:w-full max-md:h-full max-[430px]:w-[150px] wow animate__animated animate__fadeInRight rounded-3xl">
+			</div>
+		</div>
+		<hr class="max-sm:hidden">
+		<div class="title_headerBox2 text-white text-center hidden max-sm:block wow animate__animated animate__fadeIn">
+			<h1 class="mt-16 text-3xl max-[430px]:text-lg max-[430px]:mt-8">Узнавайте первым о новинках и новостях</h1>
+		</div>
+		<div
+			class="input_button1 w-full mt-10 pb-10 hidden max-sm:flex max-sm:mt-5 wow animate__animated animate__fadeIn">
+			<input type="email" placeholder="Ваш e-mail" class="input1 p-5 text-white">
+			<button class="button1"><img src="./icon/exit.svg" alt=""></button>
+		</div>
+		<div class="about-card2 w-full px-28 py-20 text-white max-lg:px-10 max-sm:hidden">
+			<h1 class="text-3xl max-lg:text-xl wow animate__animated animate__fadeIn">Всё самое интересное о ножах</h1>
+			<div class="about-card2-boxs flex gap-10 w-full justify-between mt-10 pngmax-lg:flex-wrap max-lg:justify-center">
+				<div
+					class="about-card2-box bg-[url('/image/about1.jpg')] max-lg:bg-[url('/image2/about_res1.png')] max-lg:w-[630px] wow animate__animated animate__fadeInLeft">
+					<p class="cover_data absolute right-4 top-4 text-gray-200">4 августа 2021 19:24</p>
+					<p class="cover_title absolute p-5 text-xl max-sm:text-sm">Традиционные виды японских кухонных ножей</p>
+					<div class="cover max-lg:h-[70px] max-sm:h-[60px]"></div>
+				</div>
+				<div
+					class="about-card2-box bg-[url('/image/about2.png')] max-lg:bg-[url('/image2/about_res2.png')] max-lg:w-[630px]  wow animate__animated animate__fadeInUp">
+					<p class="cover_data absolute right-4 top-4 text-gray-200">4 августа 2021 19:24</p>
+					<p class="cover_title absolute p-5 text-xl max-sm:text-sm">Всемирная история режущих клинков — взгляд в
+						прошлое</p>
+					<div class="cover max-lg:h-[70px] max-sm:h-[60px]"></div>
+				</div>
+				<div
+					class="about-card2-box bg-[url('/image/about3.jpg')] max-lg:bg-[url('/image2/about_res3.png')] max-lg:w-[630px] wow animate__animated animate__fadeInRight">
+					<p class="cover_data absolute right-4 top-4 text-gray-200">4 августа 2021 19:24</p>
+					<p class="cover_title absolute p-5 text-xl max-sm:text-sm">Как ухаживать за японскими кухонными ножами?</p>
+					<div class="cover max-lg:h-[70px] max-sm:h-[60px]"></div>
+				</div>
+			</div>
+		</div>
+		<div class="fotter w-full px-20 py-10 text-white flex gap-20 max-lg:p-5 max-lg:block">
+			<div class="fotter_text1 max-lg:w-full wow animate__animated animate__fadeInLeft">
+				<div class="flex gap-10">
+					<img src="./icon/Logo1.svg" alt="">
+					<h1 class="max-lg:text-sm">легендарные ножи, создающие шедевры</h1>
+				</div>
+				<p class="mt-10 text-lg max-lg:text-sm max-sm:text-[12px]">Компания «Tuotown» – эксклюзивный представитель
+					профессиональных кухонных ножей,
+					изготовленных лучшими мастерами Восточной Азии с применением передового европейского оборудования
+					и современных материалов.</p>
+				<p class="mt-10 text-lg max-lg:text-sm max-sm:text-[12px]">Они отличаются идеальным балансом и фантастической
+					остротой. Сочетают в себе вековые
+					традиции и новейшие разработки. Также предлагаем широкий ассортимент сопутствующих товаров.</p>
+			</div>
+			<div class="fotter_text2 max-lg:w-full wow animate__animated animate__fadeInUp">
+				<div class="gap-10">
+					<h1 class="text-2xl max-lg:text-xl max-lg:mt-5">Информация</h1>
+					<ul class="flex gap-6 mt-5 text-gray-400 text-lg max-[430px]:gap-3 max-[430px]:text-sm ">
+						<li>Главная</li>
+						<li>Новости</li>
+						<li>О компании</li>
+						<li>Контакты</li>
+					</ul>
+					<h1 class="text-2xl mt-20 max-lg:mt-5">Каталог</h1>
+					<ul class="flex flex-wrap gap-3 mt-5 text-gray-400 text-lg max-[430px]:text-sm">
+						<li>Кухонные Ножи</li>
+						<li>Складные ножи</li>
+						<li>Точилки для ножей</li>
+						<li>Аксессуары</li>
+					</ul>
+					<div class="fotter_text2_icon mt-20 flex gap-10 max-lg:mt-5 items-center max-[430px]:gap-5">
+						<h1 class="text-2xl max-[430px]:text-sm">Мы в соцсетях</h1>
+						<div class="fotter_icons flex gap-5 cursor-pointer max-[430px]:gap-2">
+							<img src="./icon/icon1.svg" alt="">
+							<img src="./icon/icon2.svg" alt="">
+							<img src="./icon/icon3.svg" alt="">
+							<img src="./icon/icon4.svg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="fotter_text3 wow animate__animated animate__fadeInRight">
+				<div class="max-lg:mt-5">
+					<h1 class="text-2xl max-sm:text-xl max-[430px]:text-lg">Контактная информация</h1>
+					<h1 class="text-3xl mt-20 number cursor-pointer max-lg:mt-5 max-sm:text-2xl">+7 (981) 120-11-17</h1>
+					<p class="text-gray-400 mt-5 max-lg:mt-1 text-lg ">tuotown@mail.ru</p>
+					<p class="text-gray-400 mt-8 max-lg:mt-1 text-lg">08:00 — 18:00, ежедневно</p>
+					<p class="text-gray-400 mt-8 max-lg:mt-1 text-lg max-[430px]:text-sm max-[430px]:hidden">Россия, Москва, МКАД,
+						19-й километр, вл20с1, вход Ф, 22-68-70</p>
+					<img src="./icon/logo2.svg" alt="" class="mt-16 max-lg:mt-4">
+				</div>
+			</div>
+		</div>
+		<div class="end w-full px-28 py-10 text-gray-400 flex justify-between max-lg:px-8 max-sm:px-4">
+			<p class="max-lg:text-sm max-sm:text-[12px] max-sm:w-[400px] max-[430px]:text-[11px] max-[430px]:w-[300px]">
+				TUOTOWN © 2021 Торговая марка TUOTOWN зарегистрирована. Все права защищены и принадлежат правообладателям.</p>
+			<img src="./icon/icon5.svg" alt="" class="max-[430px]:w-28">
+		</div>
+		<div class="basket px-32 py-5 max-lg:px-3 max-md:px-0">
+			<div class="remove_basket w-full flex items-center justify-center mt-20">
+				<button class="basket_btn removeBtn border-2 border-[red] px-10 py-2 rounded-3xl uppercase mt-5 max-md:px-6 max-md:text-sm text-white">Назад к покупкам</button>
+			</div>
+			<div class="basket-main w-full px-16 py-2 max-md:px-3 mt-32">
+				<div class="basket_boxs w-full rounded-t-2xl overflow-hidden "></div>
+				<div class="basket_total w-full px-20 py-5 border border-[#232323] bg-[#232323] flex justify-end rounded-b-2xl">
+					<div class="total text-right">
+						<p class="text-[#ADACAC] text-lg">К оплате:</p>
+						<p class="total_price text-white text-3xl max-sm:text-xl">0 тыс.р.</p>
+					</div>
+				</div>
+				<div class="basket_icon_info my-10 flex gap-20 max-lg:gap-4 max-sm:flex-wrap ">
+					<div class="basket_icon_info_box flex items-center gap-4">
+						<div class="w-[80px] h-[80px] bg-[#232323] flex justify-center items-center rounded-xl overflow-hidden">
+							<img src="./icon/basket_icon2.svg" alt="">
+						</div>
+						<div class=" text-white">
+							<h1 class="text-2xl border-b-2 border-[red] w-32">Доставка</h1>
+							<p class="mt-2 max-sm:text-sm">Саратов, 25.10 бесплатно</p>
+						</div>
+					</div>
+					<div class="basket_icon_info_box flex items-center gap-4">
+						<div class="w-[80px] h-[80px] bg-[#232323] flex justify-center items-center rounded-xl overflow-hidden">
+							<img src="./icon/basket_icon3.svg" alt="">
+						</div>
+						<div class=" text-white">
+							<h1 class="text-2xl border-b-2 border-[red] w-32">Оплата</h1>
+							<p class="mt-2 max-sm:text-sm">Самый удобный для Вас: Картой на сайте</p>
+						</div>
+					</div>
+				</div>
+				<div class="basket_inputs w-full py-16 px-10 bg-[#232323] rounded-2xl max-lg:px-4">
+					<h1 class="text-3xl text-white uppercase max-lg:text-xl max-md:text-lg max-sm:text-sm">Для подтверждения заказа - введите ваши данные и мы перезвоним вам</h1>
+					<div class=" flex gap-20 max-lg:gap-7 max-md:flex-col">
+						<div class="inputs w-[43%] max-md:w-full mt-6">
+							<div class="main_wraper w-full gap-2">
+								<div class="wraper bg-[#303030] py-5 px-10 flex rounded-lg my-4 max-lg:px-5">
+									<div class="flex flex-col w-[100%]">
+										<label class="text-[#828282]">Получатель</label>
+										<input type="text" placeholder="Неполадки с ножом" class= " py-2 bg-[#303030] outline-none border-b-2 border-[#828282] text-white">
+									</div>
+								</div>
+								<div class="wraper bg-[#303030] py-5 px-10 flex rounded-lg my-4 max-lg:px-5">
+									<div class="flex flex-col w-[100%]">
+										<label class="text-[#828282]">Мобильный телефон</label>
+										<input type="email" placeholder="+7 (___) ___-__-__" class= "py-2  bg-[#303030] outline-none border-b-2 border-[#828282] text-white">
+									</div>
+								</div>
+								<div class="wraper bg-[#303030] py-5 px-10 flex rounded-lg my-4 max-lg:px-5">
+									<div class="flex flex-col w-[100%]">
+										<label class="text-[#828282]">Email</label>
+										<input type="email" placeholder="Ваша почта" class= "py-2  bg-[#303030] outline-none border-b-2 border-[#828282] text-white">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="w-[50%] max-md:w-full flex justify-end items-start flex-col text-white wow animate__animated animate__fadeInRight" >
+							<p class="text-lg max-lg:text-base">Нажимая «Выбрать способ доставки», подтверждаю, что я ознакомлен с условиями <span class="text-[red] cursor-pointer"> Публичного договора оферты</span> и <span class="text-[red] cursor-pointer">Политикой конфиденциальности,</span> а также согласен получать информационную рассылку</p>
+							<button class="basket_btn border-2 border-[red] px-10 py-3.5 rounded-3xl uppercase mt-5 max-md:px-6 max-md:text-sm">Отправить форму</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="./js/main.js"></script>
+<script src="./js/basket.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+<script src="./wow.min.js"></script>
+<script>
+	new WOW().init();
+</script>
+
+</html>
